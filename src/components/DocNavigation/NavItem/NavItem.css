@@ -1,0 +1,41 @@
+.NavItem {
+  width: 100%;
+  border-radius: 5px;
+  background: var(--card-bg);
+  border: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  transition: border .3s ease;
+}
+
+.NavItem:hover {
+  border-color: var(--color-border-hover);
+}
+
+.NavItem a {
+  width: 100%;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavItem > a > span {
+  display: none;
+}
+
+.NavItem > a > span.active {
+  display: block;
+}
+
+.NavItem p {
+  font-size: 0.7rem;
+}
+
+.NavItem > a > span svg {
+  color: var(--color-text);
+}
+
+.NavItem > a > .content > h4 {
+  margin: 0;
+}

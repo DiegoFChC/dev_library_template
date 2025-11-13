@@ -1,0 +1,24 @@
+.Topic {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.Topic > a {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  color: var(--color-text-secondary);
+  font-size: .8rem;
+}
+
+.Topic > a:hover {
+  color: var(--color-text);
+}
+
+.Topic.active {
+  background-color: rgba(0, 161, 182, 0.233);
+}
+
+.Topic.active > a {
+  color: var(--color-primary);
+}

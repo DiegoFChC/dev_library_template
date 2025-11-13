@@ -1,0 +1,45 @@
+.ThemeToggle {
+  position: relative;
+}
+
+.ThemeToggle .container {
+  padding: 5px;
+  margin-top: 10px;
+  background: var(--card-bg);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1000;
+  right: -5px;
+  flex-direction: column;
+  overflow: hidden;
+  display: none;
+}
+
+.ThemeToggle .container::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: var(--card-bg);
+  position: absolute;
+  top: -4px;
+  right: 10px;
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.ThemeToggle > .container.active {
+  display: flex;
+}
+
+.ThemeToggle > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+.ThemeToggle > span:hover {
+  transform: scale(1.1);
+}

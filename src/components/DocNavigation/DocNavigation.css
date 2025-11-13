@@ -1,0 +1,17 @@
+.DocNavigation {
+  width: 100%;
+  margin: 35px 0;
+}
+
+.DocNavigation > ul {
+  display: flex;
+  gap: 15px;
+  color: var(--text-color);
+  list-style: none;
+}
+
+@media (max-width: 900px) {
+  .DocNavigation > ul {
+    flex-wrap: wrap;
+  }
+}

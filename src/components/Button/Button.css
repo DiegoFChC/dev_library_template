@@ -1,0 +1,15 @@
+.Button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--text-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background: var(--card-bg-hover);
+}

@@ -1,0 +1,72 @@
+.DocPage {
+  width: 100%;
+  max-width: 800px;
+}
+
+.DocPage > h1 {
+  margin-bottom: 10px;
+}
+
+.DocPage > hr {
+  width: 100%;
+  height: 1px;
+  margin: 35px 0;
+  background: var(--color-border);
+  border: none;
+}
+
+.DocPage ul,
+.DocPage ol {
+  margin-left: 5px;
+}
+
+.DocPage ul li,
+.DocPage ol li {
+  margin: 3px 0 7px 20px;
+}
+
+.DocPage strong {
+  color: var(--color-text-semibold);
+}
+
+.DocPage a {
+  text-decoration: none;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  transition: border .3s ease;
+}
+
+.DocPage a:hover {
+  border-bottom-color: var(--color-border-secondary);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+  background-color: transparent;
+}
+
+th,
+td {
+  border: 1px solid var(--color-border);
+  padding: 8px;
+  text-align: left;
+  background-color: transparent;
+  font-size: .8rem;
+}
+
+th {
+  background-color: var(--card-bg);
+  color: var(--color-text-semibold);
+  text-align: center;
+}
+
+td {
+  color: var(--color-text-secondary);
+}
+
+/* Opcional: Estilo alterno para filas (sin color) */
+tr:nth-child(even) {
+  background-color: transparent;
+}

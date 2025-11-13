@@ -1,0 +1,51 @@
+.HeadingOberver {
+  min-width: 180px;
+  max-width: 200px;
+}
+
+.HeadingOberver ul {
+  list-style: none;
+}
+
+.HeadingOberver ul li {
+  padding: 2px 3px;
+}
+
+.HeadingOberver a {
+  display: block;
+  margin-bottom: 4px;
+  width: 100%;
+  color: var(--color-text-secondary);
+  font-size: .8rem;
+  transition: color .3s ease;
+}
+
+.HeadingOberver .heading-3 {
+  padding-left: 20px;
+}
+
+.HeadingOberver .heading-4 {
+  padding-left: 38px;
+}
+
+.HeadingOberver .heading-5 {
+  padding-left: 56px;
+}
+
+.HeadingOberver .heading-6 {
+  padding-left: 74px;
+}
+
+.HeadingOberver a:hover {
+  color: var(--color-primary);
+}
+
+.HeadingOberver a.active {
+  color: var(--color-primary);
+}
+
+@media (max-width: 1080px) {
+  .HeadingOberver {
+    display: none;
+  } 
+}

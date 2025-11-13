@@ -1,13 +1,160 @@
+/* ===============================
+   🎨 SISTEMA DE COLORES GLOBAL
+   =============================== */
+
+/* ---------- 1️⃣ PALETA BASE ---------- */
+/* Paleta atómica: no se usa directamente en los componentes.
+   Se usa para construir los tokens semánticos.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Neutros */
+  --neutral-0: #ffffff;
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-400: #9ca3af;
+  --neutral-500: #6b7280;
+  --neutral-600: #4b5563;
+  --neutral-700: #374151;
+  --neutral-800: #1f2937;
+  --neutral-900: #112127;
+
+  /* Azules (primarios) */
+  --blue-50: #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-500: #3bdaf6;
+  --blue-600: #0a8ca3;
+  --blue-700: #005d6d;
+
+  /* Verdes (éxito) */
+  --green-500: #22c55e;
+
+  /* Rojos (error) */
+  --red-500: #ef4444;
+
+  /* Amarillos (advertencia) */
+  --yellow-500: #eab308;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ---------- 2️⃣ TOKENS SEMÁNTICOS ---------- */
+/* Colores abstractos que describen propósito, no apariencia.
+   Cambian entre temas sin alterar los componentes.
+*/
+
+:root {
+  /* Fondo y texto principal */
+  --color-bg: var(--neutral-0);
+  --color-bg-alt: var(--neutral-100);
+  --color-text: var(--neutral-900);
+  --color-text-semibold: var(--neutral-700);
+  --color-text-secondary: var(--neutral-600);
+  --color-border: var(--neutral-200);
+  --color-border-secondary: var(--neutral-200);
+  --color-border-hover: var(--neutral-400);
+
+  /* Acciones semánticas */
+  --color-primary: var(--blue-700);
+  --color-primary-hover: var(--blue-600);
+  --color-success: var(--green-500);
+  --color-error: var(--red-500);
+  --color-warning: var(--yellow-500);
+
+  /* Fondo global con gradiente (opcional) */
+  --gradient-bg: linear-gradient(
+    to right,
+    rgb(236, 249, 255),
+    rgb(246, 249, 250),
+    rgb(236, 249, 255)
+  );
+  --solid-bg: rgb(236, 249, 255);
+}
+
+/* ---------- 3️⃣ TOKENS DE COMPONENTES ---------- */
+
+:root {
+  /* Botones */
+  --button-bg: var(--color-primary);
+  --button-bg-hover: var(--color-primary-hover);
+  --button-text: var(--neutral-0);
+  --button-border: transparent;
+
+  /* Tarjetas */
+  --card-bg: var(--color-bg-alt);
+  --card-bg-hover: var(--color-bg);
+  --card-border: var(--color-border);
+  --card-text: var(--color-text);
+
+  /* Inputs */
+  --input-bg: var(--color-bg);
+  --input-border: var(--color-border);
+  --input-text: var(--color-text);
+  --input-placeholder: var(--color-text-secondary);
+  --input-focus-border: var(--color-primary);
+
+  /* Header / Sidebar */
+  --header-bg: var(--color-bg-alt);
+  --sidebar-bg: var(--neutral-50);
+  --sidebar-text: var(--color-text);
+  --sidebar-hover-bg: var(--neutral-100);
+
+  /* Others */
+  --fence-bg: linear-gradient(
+    to right,
+    rgb(0,2,3),
+    rgb(0,8,11),
+    rgb(0,2,3)
+  );
+}
+
+/* ---------- 4️⃣ MODO OSCURO ---------- */
+
+body[theme-toggle='dark'] {
+  --color-bg: var(--neutral-900);
+  --color-bg-alt: var(--neutral-800);
+  --color-text: var(--neutral-50);
+  --color-text-semibold: var(--neutral-300);
+  --color-text-secondary: var(--neutral-400);
+  --color-border: var(--neutral-700);
+  --color-border-secondary: var(--neutral-900);
+  --color-border-hover: var(--neutral-500);
+
+  --color-primary: var(--blue-500);
+  --color-primary-hover: var(--blue-600);
+
+  --gradient-bg: linear-gradient(
+    to right,
+    rgb(0, 0, 0),
+    rgb(0, 16, 22),
+    rgb(0, 0, 0)
+  );
+  --solid-bg: rgb(0,1,2);
+
+  /* Component overrides */
+  --card-bg: var(--neutral-900);
+  --card-bg-hover: var(--neutral-700);
+  --sidebar-bg: var(--neutral-800);
+  --sidebar-hover-bg: var(--neutral-700);
+  --input-bg: var(--neutral-800);
+
+  /* Others */
+  --fence-bg: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: var(--gradient-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html,
@@ -16,27 +163,63 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+li {
+  font-size: .8rem;
+  color: var(--color-text-secondary);
+}
+
+p:has(img) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  margin: 20px 0;
+  max-width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+h2, h3, h4, h5, h6 {
+  margin: 10px 0 8px 0;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: var(--color-text);
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+h4 {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+h5 {
+  font-size: .83rem;
+  color: var(--color-text);
+}
+
+h6 {
+  font-size: 0.7rem;
+  color: var(--color-text);
+}
+
+p {
+  font-size: .8rem;
+  color: var(--color-text-secondary);
+  line-height: 1.3rem;
 }

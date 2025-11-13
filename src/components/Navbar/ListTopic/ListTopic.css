@@ -1,0 +1,8 @@
+.ListTopic {
+  width: 100%;
+}
+
+.ListTopic > h5 {
+  margin: 7px;
+  color: var(--color-text);
+}

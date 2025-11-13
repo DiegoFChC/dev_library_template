@@ -1,0 +1,17 @@
+.NotesLayout {
+  width: 100%;
+}
+
+.NotesLayout .notesContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 30px;
+}
+
+@media (max-width: 900px) {
+  .NotesLayout .notesContent {
+    gap: 0;
+  }
+}

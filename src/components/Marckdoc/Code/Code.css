@@ -1,0 +1,8 @@
+.Code {
+  font-family: 'Courier New', Courier, monospace;
+  background: var(--card-bg);
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: var(--color-text);
+  font-size: 0.9em;
+}

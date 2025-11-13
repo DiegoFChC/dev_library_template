@@ -1,0 +1,16 @@
+.Docs {
+  display: flex;
+  gap: 30px;
+}
+
+.content-wrapper {
+  max-width: 100%;
+  max-height: 90dvh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.Docs .content-wrapper::-webkit-scrollbar {
+  width: 0;
+}
