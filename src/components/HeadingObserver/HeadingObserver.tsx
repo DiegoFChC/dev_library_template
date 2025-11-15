@@ -13,11 +13,6 @@ interface HeadingOberverProps {
 export function HeadingObserver({ content }: HeadingOberverProps): JSX.Element {
   const tree = parseContentMarkdoc(content) as Tag
 
-  // if (!(tree instanceof Tag)) {
-  //   console.error('El contenido parseado no es un Markdoc Tag válido.', tree)
-  //   return <></>
-  // }
-
   const { children } = tree
 
   // const tags = children.filter(
@@ -36,13 +31,13 @@ export function HeadingObserver({ content }: HeadingOberverProps): JSX.Element {
       <h5>En esta página</h5>
       <ul>
         {tags.map((tag) => {
-          const text = tag.children[0]
+          const text = tag.children[0] as string
           const textId = text ? text.toString().toLowerCase().replace(/\s/g, '-') : ''
           const level = tag.attributes.level
 
           return (
             <li key={textId} className={`heading-${level}`}>
-              <a href={`#${textId}`} className={activeId === textId ? 'active' : ''}>{text && ''}</a>
+              <a href={`#${textId}`} className={activeId === textId ? 'active' : ''}>{text}</a>
             </li>
           )
         })}
