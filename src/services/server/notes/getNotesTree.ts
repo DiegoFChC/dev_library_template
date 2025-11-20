@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import type { NoteTreeNode } from '@/types'
 
-const NOTES_ROOT_DIR = path.join(process.cwd(), 'src', 'notes')
+const NOTES_ROOT_DIR = path.join(process.cwd(), 'public', 'notes')
 const NOTE_FILE_EXTENSION = '.md'
 const META_FILE_NAME = '_meta.json'
 

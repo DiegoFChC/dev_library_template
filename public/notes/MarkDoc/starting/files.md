@@ -6,7 +6,7 @@ order: 2
 
 ## Estructura de la documentación
 
-Los archivos _.md_ deben ir ubicados en la carpeta `src/notes` y deben tener la sigueinte estructura:
+Los archivos _.md_ deben ir ubicados en la carpeta `public/notes` y deben tener la sigueinte estructura:
 
 * **Carpeta principal:** Contendrá toda la información, secciones y archivos _.md_.
   * **_meta.json** es un archivo necesario donde deberás especificar que título tendrá cada sección (subcarpetas) y en que orden quieres que se muestren en la barra de navegación lateral.

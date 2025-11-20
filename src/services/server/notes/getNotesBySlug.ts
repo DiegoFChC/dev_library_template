@@ -3,7 +3,7 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import type { NoteFile, NoteMeta } from '@/types'
 
-const NOTES_PATH = path.join(process.cwd(), 'src', 'notes')
+const NOTES_PATH = path.join(process.cwd(), 'public', 'notes')
 
 export function getNotesBySlug(slug: string[]): NoteFile {
   const originalPath = slug.map((item) => decodeURIComponent(item))
