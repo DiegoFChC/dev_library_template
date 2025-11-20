@@ -1,0 +1,18 @@
+{
+  "starting": {
+    "order": 1,
+    "title": "Introducción"
+  },
+  "tags": {
+    "order": 3,
+    "title": "Etiquetas"
+  },
+  "nodes": {
+    "order": 2,
+    "title": "Nodos"
+  },
+  "others": {
+    "order": 4,
+    "title": "Otros"
+  }
+}
