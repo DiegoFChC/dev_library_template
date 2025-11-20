@@ -19,7 +19,9 @@ export function NavItem({ data, isNext = false }: NavItemProps): JSX.Element {
           <ArrowBack />
         </span>
         <div className='content'>
-          <p>{isNext ? 'Siguiente' : 'Anterior'}</p>
+          <p className={!isNext ? 'back' : ''}>
+            {isNext ? 'Siguiente' : 'Anterior'}
+          </p>
           <h4>{title}</h4>
         </div>
         <span className={isNext ? 'active' : ''}>

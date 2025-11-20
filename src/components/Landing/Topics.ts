@@ -2,22 +2,20 @@ type Topic = {
   name: string
   topic: string
   img: string
+  mainFolder: string
 }
 
 export const topics: Topic[] = [
   {
+    name: 'Markdoc (This template)',
+    topic: 'Markdoc',
+    img: '/logos/markdoc.png',
+    mainFolder: 'starting'
+  },
+  {
     name: 'JavaScript',
     topic: 'JavaScript',
-    img: '/logos/js.png'
-  },
-  {
-    name: 'TypeScript',
-    topic: 'TypeScript',
-    img: '/logos/ts.png'
-  },
-  {
-    name: 'Node JS',
-    topic: 'Node JS',
-    img: '/logos/node.png'
+    img: '/logos/js.png',
+    mainFolder: 'general-description'
   }
 ]

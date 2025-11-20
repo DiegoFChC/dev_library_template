@@ -7,12 +7,13 @@ interface TopicButtonProps {
   name: string
   topic: string
   img: string
+  folder: string
 }
 
-export function TopicButton({ name, topic, img }: TopicButtonProps): JSX.Element {
+export function TopicButton({ name, topic, img, folder }: TopicButtonProps): JSX.Element {
   return (
     <Link
-      href={`/notes/${topic}/Descripción%20general/Intro`}
+      href={`/notes/${topic}/${folder}/intro`}
       className='TopicButton'
     >
       {name}

@@ -40,6 +40,10 @@
   border-bottom-color: var(--color-border-secondary);
 }
 
+.DocPage p {
+  margin-top: 7px;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;

@@ -10,7 +10,7 @@ export function Landing(): JSX.Element {
       <section className='mainTitle'>
         <div className='background'></div>
         <h1>
-          <strong>./ Dev Library</strong>
+          <strong>./ Dev Library Template</strong>
         </h1>
         <p>
           Recopilación personal de <span>notas</span>, <span>cheatsheets</span> y <span>ejemplos prácticos</span> sobre lenguajes de programación, frameworks y herramientas.
@@ -21,9 +21,9 @@ export function Landing(): JSX.Element {
         <div className='cards'>
           {
             topics?.map(item => {
-              const { name, topic, img } = item
+              const { name, topic, img, mainFolder } = item
               return (
-                <TopicButton key={topic} name={name} topic={topic} img={img} />
+                <TopicButton key={topic} name={name} topic={topic} img={img} folder={mainFolder} />
               )
             })
           }

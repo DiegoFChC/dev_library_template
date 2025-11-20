@@ -1,8 +1,9 @@
 ---
-title: Markdown sintaxis
-description: Aprendiendo a usar la sintaxis de markdown
+title: Sintaxis general
+description: Ejemplos acerca de la sitaxis general de markdown en esta plantilla
 order: 1
 ---
+
 
 # Markdown syntax guide
 
@@ -81,18 +82,6 @@ You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
 
 {% callout type="caution" %}
 **Caution** Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-{% /callout %}
-
-{% callout type="danger" %}
-**Danger** Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-{% /callout %}
-
-{% callout type="info" %}
-**Info** Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-{% /callout %}
-
-{% callout type="tip" %}
-**Tip** Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 {% /callout %}
 
 {% callout type="tip" title="Custom Tittle" %}

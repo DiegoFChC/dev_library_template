@@ -21,10 +21,10 @@ order: 1
 - Si utilizo una variable y luego la creo, con **var** inicia **undefined**
 - Puedo re-declarar la variable
     
-    ```jsx
-    var a;
-    var a;
-    ```
+```javascript
+  var a;
+  var a;
+```
     
 
 ### let
@@ -35,10 +35,10 @@ order: 1
 - Si utilizo una variable **let** y luego la creo, sale **error**
 - No puedo re-declarar la variable
     
-    ```jsx
-    let a;
-    let a; // error
-    ```
+```javascript
+  let a;
+  let a; // error
+```
     
 
 ## Scope
@@ -63,7 +63,7 @@ A los bloques de código que tienen la capacidad de alterar el flujo de ejecuci�
 
 La **sentencia de bloque** es una estructuras sencilla, que se utiliza simplemente para agrupar declaraciones, y no modifica el flujo de ejecución.
 
-```jsx
+```javascript
 {
   ...;
 	...;
@@ -74,7 +74,7 @@ La **sentencia de bloque** es una estructuras sencilla, que se utiliza simplem
 
 La **sentencia condicional** se utilizan para ejecutar un bloque de código únicamente si se cumple cierta condición.
 
-```jsx
+```javascript
 if (condition) {
 	...;
 } else if (condition) {
@@ -96,7 +96,7 @@ Las **sentencias de iteración**, también llamadas *bucles* o *loops*, se u
 
 La **sentencia while** itera sobre un bloque de código continuamente mientras la condición indicada sea verdadera.
 
-```jsx
+```javascript
 while (condition) {
 	...;
 }
@@ -106,7 +106,7 @@ while (condition) {
 
 La **sentencia do…while** funciona igual que **while**, pero con la diferencia de que el bloque de código se ejecuta al menos una vez, independientemente del valor de la condición.
 
-```jsx
+```javascript
 do {
  ...;
 } while (condition);
@@ -122,7 +122,7 @@ La **sentencia for** recibe tres argumentos que determinan la forma de iteraci
 
 Por lo tanto, el bucle va a iterar sobre el bloque de código tantas veces como se cumpla la condición, y teniendo disponible dentro de su contexto los valores de las expresiones inicial y final.
 
-```jsx
+```javascript
 for (expresionInicial; condition; expresionFinal) {
 	...;
 }
@@ -134,7 +134,7 @@ La **sentencia for…in** itera sobre los elementos de un objeto en un orden a
 
 El valor a la izquierda de `in` representa el nombre de la propiedad del objeto correspondiente a la iteración en curso.
 
-```jsx
+```javascript
 var automovil = {
   marca: "Audi",
   modelo: "A1",
@@ -150,7 +150,7 @@ for (var dato in automovil) {
 
 When a **for** loop looks like this, with the word **of** after a variable definition, it will loop over the elements of the value given after of. This works not only for arrays but also for strings and some other data structures.
 
-```jsx
+```javascript
 for (let entry of JOURNAL) {
 	console.log(`${entry.events.length} events.`);
 }
@@ -162,7 +162,7 @@ La **sentencia switch** evalúa una expresión, comparando su valor con otro v
 
 Si ninguno de los `case` coincide con la expresión evaluada, se buscará una sentencia `default`, y si esta presente, se ejecutará el código que le sigue.
 
-```jsx
+```javascript
 switch (condition) {
 	case a:
 		...;

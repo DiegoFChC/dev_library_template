@@ -4,23 +4,23 @@ description: Lorem Ipsum is simply dummy text of the printing and typesetting in
 order: 2
 ---
 
-# Tipos de datos en TypeSript
+## Tipos de datos en TypeSript
 Tenemos diferentes conjuntos de tipos de datos:
 
-## Primitivo
+### Primitivo
 * string
 * number
 * boolean
 * undefined
 * null
 
-## Compuestos (Estructurados)
+### Compuestos (Estructurados)
 * object
 * array
 * enum
 * function
 
-## Definidos por el usuario
+### Definidos por el usuario
 * class
 * interface
 * type

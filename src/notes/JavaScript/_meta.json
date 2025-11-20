@@ -1,0 +1,14 @@
+{
+  "general-description": {
+    "order": 1,
+    "title": "Descripción general"
+  },
+  "dom": {
+    "order": 3,
+    "title": "DOM"
+  },
+  "program-structure": {
+    "order": 4,
+    "title": "Estructura del programa"
+  }
+}

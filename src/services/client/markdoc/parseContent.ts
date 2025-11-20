@@ -2,6 +2,12 @@ import { parse, transform } from '@markdoc/markdoc'
 import type { RenderableTreeNode, Node } from '@markdoc/markdoc'
 import { configMarkdoc } from '../../../components/Marckdoc/configMarkdoc'
 
+/**
+ * Parse content markdoc
+ * @param data String from markdown
+ * @returns renderable tree
+ */
+
 export function parseContentMarkdoc(data: string): RenderableTreeNode {
   // data -> Markdoc content
   // ast -> abstract syntax tree

@@ -32,6 +32,10 @@
   font-size: 0.7rem;
 }
 
+.NavItem p.back {
+  text-align: right;
+}
+
 .NavItem > a > span svg {
   color: var(--color-text);
 }

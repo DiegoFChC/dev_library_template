@@ -1,10 +1,8 @@
 ---
 title: JavaScript
-description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+description: Este es un ejemplo de com usar esta plantilla de documentación.
 order: 1
 ---
-
-{% $markdoc.frontmatter.title %}
 
 ## TypeScript
 Lenguage de programación de código abierto realizado por Microsoft para extender JavaScript. Permite incluir **tipado estricto** en JS. Permite tipar las aplicaciones JS, dando más herramientas y robustés.

@@ -4,9 +4,8 @@ import { Landing } from '@/components/Landing/Landing'
 import { TopBar } from '@/components'
 
 export const metadata: Metadata = {
-  title: 'Dev Library',
-  description:
-    'Here you can found my programming notes and little components with HTML, CSS and JavaScript.',
+  title: 'Dev Library Template',
+  description: 'Plantilla para documentación usando Next.js y MarkDoc.',
 }
 
 export default function Home(): JSX.Element {
