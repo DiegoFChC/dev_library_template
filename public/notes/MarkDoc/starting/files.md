@@ -62,3 +62,12 @@ Podrá encontrar los archivos más relevantes acerca del renderizado de markdoc 
 * `/src/components/Markdoc` Componentes personalizados (Tags).
   * `/src/components/Markdoc/configMarkdoc` Configuración para renderizado de nodos y etiquetas.
 * `/src/services/server` Funciones de lectura de archivos y generación de árboles de navegación y renderizado.
+
+{% callout type="danger" %}
+Si quieres añadir un nuevo item (topic o tema) a la lista de la landing page, lo puedes hacer desde el archivo ubicado en `/src/components/landing/Topics`. Es necesario que para cada item uses:
+
+* `name` que se mostrará en el botón.
+* `topic` nombre de la carpeta donde tiene la documentación.
+* `img` del tema.
+* `mainFolder` hace referencia al primer archivo al que quieres ser redirigido cuando des click sobre el topic o tema.
+{% /callout %}
